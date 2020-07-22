@@ -1,6 +1,6 @@
 This repository is a clone of the ns-3 repository with the changes in the `scratch/` directory. Specifically `nw.cc`
 
-The documentation can be found in the `docs/` folder
+The documentation can be found in the `report/` folder
 ## Building
 
 This might take a while
