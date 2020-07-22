@@ -29,7 +29,12 @@ NS_LOG_COMPONENT_DEFINE ("FirstScriptExample");
 int
 main (int argc, char *argv[])
 {
-  int numNodes = 8;
+  if(argc < 2){
+    printf("COMMAND: ./waf --run=\"scratch/nw <number-of-nodes>\"\n");
+    exit(1);
+  }
+    
+  int numNodes = atoi(argv[1]);
 
   CommandLine cmd;
   cmd.AddValue("numNodes", "Number of nodes in the network", numNodes);
